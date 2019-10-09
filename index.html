@@ -1,0 +1,138 @@
+<h1 id="title"> Survey Form: Our First Date </h1>
+ <p id="description">
+    Was it as good for you as it was for me?
+  </p>
+<p> Let me know how I can improve my "game". 
+</p>
+  <form id="survey-form" action:"/submit-survey">
+        <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+          <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email">
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+       </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Which option best describes your current status?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="singleY">Single (Actively seeking)</option>
+      <option  value="singleN">Single (Not actively seeking)</option>
+      <option value="openRel">Open Relationship</option>
+      <option value="taken">In a relationship (Shame on you!)</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+      </div>
+    </div>
+    
+        <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* On a scale of 1 to 10 (1 being a hard no and 10 being most definitely), how likely is it that you would sacrifice yourself for a second date?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>1<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>2<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>3<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>4<input name="radio-buttons" value="4"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>5<input name="radio-buttons" value="5"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>6<input name="radio-buttons" value="6"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>7<input name="radio-buttons" value="7"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>8<input name="radio-buttons" value="8"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>9<input name="radio-buttons" value="9"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>10<input name="radio-buttons" value="10"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    
+        <div class="rowTab">
+      <div class="labels">
+        <label for="recomm">If not, how likely are you to recommend me to a friend or vice versa?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="recomm" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="lolNo">Not a chance</option>
+      <option  value="probzNah">Not likely</option>
+      <option value="meh">Neither likely or unlikely</option>
+      <option value="probz">Likely</option>
+      <option value="yeeYee">Most likely</option>
+      <option value="ope">Prefer not to say</option>
+    </select>
+      </div>
+    </div>
+    
+        <div class="rowTab">
+      <div class="labels">
+        <label id="recomm-name-label" for="recomm-name"> If you answered likely to the last question, please enter their name below: </label>
+      </div>
+          <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter their name here">
+      </div>
+    </div>  
+    
+    <div class="row tab">
+       <div class="labels">
+         <label id="recomm-phone-number-label" for="recomm-phone-number"> Phone Number: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="number" name="phone-number" id="phone-number" class="input-field" placeholder="Enter their phone number">
+      </div>
+    </div>    
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">* Please select what areas could use improvement (please check all that apply).</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Choice of Restaurant</label></li>
+          <li class="radio"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Choice of Movie</label></li>
+          <li class="radio"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Clothing</label></li>
+          <li class="radio"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Small-talk topics</label></li>
+          <li class="radio"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Flirting</label></li>
+          <li class="radio"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Hygiene</label></li>
+          <li class="radio"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Gentlemanliness</label></li>
+          <li class="radio"><label><input name="prefer" value="8" type="checkbox" class="userRatings">The car ride & music choice</label></li>
+          <li class="radio"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Goodnight?</label></li>
+          <li class="radio"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Follow Up</label></li>
+          <li class="radio"><label><input name="prefer" value="11" type="checkbox" class="userRatings">Other</label></li>
+        </ul>
+      </div>
+    </div>
+          
+      <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Questions, comments, concerns? I am open to any suggestions and/or tips.</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+        <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
